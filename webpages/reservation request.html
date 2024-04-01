@@ -1,0 +1,72 @@
+<!--Aneetta Jijo N01657252-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Reservation Request</title>
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <div>
+        <h1>Reservation Request</h1>
+        <form>
+            <fieldset>
+                <legend>General information</legend>
+            <label>Arrival date: </label>
+            <input type="date" id="date" name="date"><br><br>
+            <label>Nights: </label>
+            <input type="text" id="nights" name="nights" required><span class="required">Must be numeric</span><br><br>
+            <label for="adults">Adults:</label>
+            <select id="adults" required>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select><br><br>
+            <label>Children:</label>
+            <select id="children" required>
+             <option>0</option>
+             <option>1</option>
+             <option>2</option>
+            </select>
+        </fieldset><br>
+            <fieldset>
+                <legend>Preferences</legend>
+                <label>Room Type</label>
+                <input type="radio" id="standard" name="room" value="standard">
+                Standard
+                <input type="radio" id="business" name="room" value="business">
+                Business
+                <input type="radio" id="suite" name="room" value="Suit">
+                Suit<br><br>
+                <label>Bed Type:</label>
+                <input type="radio" id="king" value="king" name="bed">
+                King
+                <input type="radio" id="double " value="double double" name="bed">
+                Double Double<br><br>
+                <input type="checkbox" id="smoke" value="smoking" name="bed">
+                Smoking
+            </fieldset><br>
+            <fieldset>
+                <legend>Contact information</legend>
+                <label>Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label>Email</label>
+                <input type="email" id="email" name="email" required><span class="required">Must be valid email address</span><br><br>
+                <label>Phone:</label>
+                <input type="text" id="phone" name="phone" placeholder="999-999-9999" required><span class="required">This field is required</span>
+
+            </fieldset><br>
+
+            <input type="submit" id="submit" value="Submit Request"> 
+            
+            </form> <br>
+        <script src="../js/script3.js">
+
+        </script>
+        <footer>
+            &copy;"Aneetta Jijo N01657252" 2024 
+        </footer>
+    </div>
+    </body>
+</html>
